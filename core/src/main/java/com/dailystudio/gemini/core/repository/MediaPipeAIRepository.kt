@@ -39,7 +39,7 @@ class MediaPipeAIRepository(
          *       is loaded well.
          */
 
-        setReady(true)
+        setReady(false)
     }
 
     override suspend fun generateContent(

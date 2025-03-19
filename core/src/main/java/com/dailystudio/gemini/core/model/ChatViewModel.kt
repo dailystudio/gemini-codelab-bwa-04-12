@@ -349,8 +349,8 @@ class ChatViewModel(application: Application): AndroidViewModel(application) {
 
                     if (dotsLoader.isRunning()) {
                         if (!stream.text.isNullOrEmpty()
-                                || status == UiStatus.Error
-                                || status == UiStatus.Done) {
+                            || status == UiStatus.Error
+                            || status == UiStatus.Done) {
                             dotsLoader.stopLoadingDots()
                             _uiState.update { currentState ->
                                 currentState.copy(
@@ -364,7 +364,6 @@ class ChatViewModel(application: Application): AndroidViewModel(application) {
                         append(stream.text ?: "")
 
                         if (status == UiStatus.Error) {
-                            Logger.debug("error: ${stream.errorMessage}")
                             append("<font color='${colorError}'>")
                             append(stream.errorMessage?.trim())
                             append("</font>")
