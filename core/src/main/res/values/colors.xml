@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#673AB7</color>
-    <color name="primaryLightColor">@color/primaryColor</color>
-    <color name="primaryDarkColor">@color/primaryColor</color>
+    <color name="primaryColor">#607D8B</color>
+    <color name="primaryLightColor">#90A4AE</color> <!-- A soft blue for highlights -->
+    <color name="primaryDarkColor">@color/primaryColor</color> <!-- A deeper blue for depth -->
 
-    <color name="secondaryColor">@color/primaryColor</color>
-    <color name="secondaryLightColor">@color/primaryLightColor</color>
-    <color name="secondaryDarkColor">@color/primaryDarkColor</color>
+    <color name="secondaryColor">@color/primaryColor</color> <!-- A bright, cheerful yellow for secondary use -->
+    <color name="secondaryLightColor">@color/secondaryColor</color> <!-- A lighter yellow for a casual feel -->
+    <color name="secondaryDarkColor">@color/secondaryColor</color> <!-- A darker yellow for contrast -->
 
-    <color name="accentColor">@color/primaryColor</color>
+    <color name="accentColor">@color/primaryColor</color> <!-- A warm and casual orange accent -->
+    <color name="switchRippleColor">@color/primaryLightColor</color> <!-- A warm and casual orange accent -->
 
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#ffffff</color>
+    <color name="primaryTextColor">#eee</color> <!-- A balanced dark gray for text readability -->
+    <color name="secondaryTextColor">#FFFFFF</color> <!-- White for contrast against bright backgrounds -->
 
+    <color name="human">@color/light_black</color>
+    <color name="ai">@color/primaryColor</color>
+    <color name="error">@color/tomato_red</color>
 </resources>
+

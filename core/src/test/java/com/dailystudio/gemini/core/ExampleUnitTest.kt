@@ -1,4 +1,4 @@
-package com.dailystudio.gemini.core
+package com.dailystudo.gemini.core
 
 import org.junit.Test
 
