@@ -33,7 +33,7 @@ class MediaPipeAIRepository(
         Logger.debug(LT_MODEL_GEMMA, "maxTokens = ${AppSettingsPrefs.instance.maxTokens}")
 
         /**
-         * TODO: Prepare you model here. Calling the Google AI API
+         * TODO: Prepare you model here. Calling the MediaPipe API
          *       to create a model instance for inference.
          *       Don't forget to call setReady(true) when the model
          *       is loaded well.
@@ -48,7 +48,7 @@ class MediaPipeAIRepository(
         mimeType: String?
     ): String? {
         /**
-         * TODO: Do the synchronous call to Google AI API to generate
+         * TODO: Do the synchronous call of MediaPipe API to generate
          *       the real content.
          */
 
@@ -61,8 +61,14 @@ class MediaPipeAIRepository(
         mimeType: String?
     ) {
         /**
-         * TODO: Do the asynchronous call to Google AI API to generate
+         * TODO: Do the asynchronous call to MediaPipe API to generate
          *       the real content.
+         *       Don't forget to call updateGenerationStream() to update
+         *       the progress of the generation.
+         *       1) updateGenerationStream(text, Status.RUNNING) to gradually
+         *          update the display of the response.
+         *       2) updateGenerationStream(null, Status.DONE) when all the
+         *          content is generated.
          */
         updateGenerationStream(null, Status.DONE)
     }

@@ -50,8 +50,14 @@ class GeminiAIRepository(
         mimeType: String?
     ) {
         /**
-         * TODO: Do the asynchronous call to Google AI API to generate
+         * TODO: Do the asynchronous call of Google AI API to generate
          *       the real content.
+         *       Don't forget to call updateGenerationStream() to update
+         *       the progress of the generation.
+         *       1) updateGenerationStream(text, Status.RUNNING) to gradually
+         *          update the display of the response.
+         *       2) updateGenerationStream(null, Status.DONE) when all the
+         *          content is generated.
          */
 
         updateGenerationStream(null, Status.DONE)
