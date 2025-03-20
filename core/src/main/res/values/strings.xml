@@ -8,11 +8,9 @@
         \n\n
         · Cloud-based tasks:\n
         \t\t1. Google AI Client SDK\n
-        \t\t2. Firebase Vertex AI\n
         \n
         · Edge computing:\n
-        \t\t1. Gemma 2 with MediaPipe LLM task\n
-        \t\t2. Gemini Nano with Google AI Edge SDK\n
+        \t\t1. MediaPipe LLM task\n
         \nIf you have any problem, please feel free to contact this mail address:
         \n\n
         \t\t\tdaiystudio2010@gmail.com
