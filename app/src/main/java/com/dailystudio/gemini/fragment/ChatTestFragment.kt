@@ -115,8 +115,17 @@ class ChatTestFragment: AbsPermissionsFragment() {
             }
         }
 
-        setHasOptionsMenu(true)
+        lifecycleScope.launch {
+            lifecycle.repeatOnLifecycle(Lifecycle.State.RESUMED) {
+                AppSettingsPrefs.instance.prefsChanges.collectLatest {
+                    if (it.prefKey == AppSettingsPrefs.PREF_DEBUG_ENABLED) {
+                        syncStatsViews()
+                    }
+                }
+            }
+        }
 
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
