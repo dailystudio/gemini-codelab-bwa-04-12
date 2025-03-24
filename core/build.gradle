@@ -75,14 +75,8 @@ dependencies {
     /* Gemini Google AI Client SDK */
     api("com.google.ai.client.generativeai:generativeai:${project.ext.generativeAIVersion}")
 
-    /* Vertex AI in Firebase */
-    api ("com.google.firebase:firebase-vertexai:${project.ext.vertexAIVersion}")
-
     /* MediaPipe */
     api ("com.google.mediapipe:tasks-genai:${project.ext.mediaPipeGenAIVersion}")
-
-    /* AI Core */
-    api ("com.google.ai.edge.aicore:aicore:${project.ext.aicoreVersion}")
 
     /* PDFBox */
     api ("com.tom-roush:pdfbox-android:${project.ext.pdfBoxVersion}")
